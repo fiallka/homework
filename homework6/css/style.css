@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+.elements{
+    max-width: 1300px;
+    max-height: 500px;
+    background: #dbc3f0;
+    overflow: auto;
+    border-radius: 20px 0 0 20px;
+}
+.element{
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background: #a299f1;
+    box-shadow: ;
+    border-radius: 20px;
+    box-shadow:inset 0px 1px 62px -19px #05000894;
+    margin: 10px;
+    padding: 20px;
+}
