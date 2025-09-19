@@ -1,0 +1,38 @@
+body{
+    background: #322a2a;
+}
+.container{
+    max-width: 450px;
+    margin: 0 auto;
+}
+h1{
+    color: #fff;
+    font-family: Arial;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+    position: relative;
+}
+h1::before{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #ffea00;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    transform: translate(0px, -12px);
+    
+}
+h1::after{
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #ea00ff;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    transform: translate(27px, -14px);
+}
