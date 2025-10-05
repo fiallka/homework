@@ -15,7 +15,7 @@
             });
         });
     });
-// -------------------
+    // -------------------
     const btn = document.querySelector('.about__img-button')
     const modal = document.querySelector('.modal')
     const body = document.body;
@@ -41,12 +41,12 @@
         }
     }
     )
-//========================
+    //========================
     const tabControls = document.querySelector('.tab-controls')
-    
+
     tabControls.addEventListener('click', toggleTab)
 
-    function toggleTab(e) { 
+    function toggleTab(e) {
 
         const tabControl = e.target.closest('.tab-controls__link')
 
@@ -87,22 +87,48 @@
             const accordionItem = accordionControl.parentElement;
             const accordionContent = accordionControl.nextElementSibling;
 
-            if (accordionOpenedItem && accordionItem != accordionOpenedItem ) {
+            if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
                 accordionOpenedItem.classList.remove('accordion-list__item--opened');
                 accordionOpenedContent.style.maxHeight = null;
-            } 
+            }
 
             accordionItem.classList.toggle('accordion-list__item--opened');
 
             if (accordionItem.classList.contains('accordion-list__item--opened')) {
                 accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
             } else {
-                accordionContent.style. maxHeight = null;
+                accordionContent.style.maxHeight = null;
             }
         });
     });
+    // слайдер-галерея 
+    const swiper = new Swiper('.gallery__slider', {
 
+        spaceBetween: 32,
+        slidesPerView: 1.5,
 
+        pagination: {
+            el: '.gallery__pagination',
+            type: 'fraction',
+        },
+
+        navigation: {
+            nextEl: '.gallery__next',
+            prevEl: '.gallery__prev',
+        },
+
+        breakpoints: {
+            601: {
+                slidesPerView: 3,
+            },
+            801: {
+                spaceBetween: 15,
+            },
+            1101: {
+                slidesPerView: 4,
+            }
+        }
+    });
 
 
     // 
