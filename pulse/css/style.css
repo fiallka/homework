@@ -901,6 +901,9 @@
     transform: translate(-50%, -50%);
 
 }
+.center__img-button img {
+    transform: translateX(14%);
+}
 
 .center__about {
     max-width: 1210px;
