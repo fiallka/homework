@@ -38,6 +38,14 @@
     background: var(--color-accent);
     border-radius: 50%;
 }
+.header__cart path,
+.header__search path{
+    transition: var(--transition);
+}
+.header__cart:hover path,
+.header__search:hover  path{
+    fill: var(--color-accent);
+}
 .nav__list {
     display: flex;
     gap: 3vh 50px;

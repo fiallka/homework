@@ -60,19 +60,30 @@
     font-weight: 400;
     font-size: 42px;
     margin-bottom: 24px;
+    transition: var(--transition);
 }
 
 .address__tel {
     display: block;
     font-weight: 400;
     font-size: 42px;
+    transition: var(--transition);
 }
 
+.address__mail:hover,
+.address__tel:hover{
+    color: var(--color-accent);
+}
 .address__socials-list {
     display: flex;
     gap: 45px;
 }
-
+.address_socials-link path{
+    transition: var(--transition);
+}
+.address_socials-link:hover path{
+    fill: var(--color-accent);
+}
 .footer__about {
     display: flex;
     gap: 166px;

@@ -15,7 +15,7 @@
             });
         });
     });
-    // -------------------
+    // ------------------- swiper 1
     const swiper = new Swiper('.swiper', {
         direction: 'vertical',
         slidesPerView: 1,

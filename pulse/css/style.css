@@ -1977,6 +1977,15 @@
         font-size: 20px;
     }
 
+    .tabs__info-content {
+    transform: translateY(-3%);
+}
+
+    
+
+
+
+
     .info__about-sum {
         font-size: 60px;
     }
@@ -1999,15 +2008,6 @@
     /* ================================ */
     .content__img {
         margin-bottom: 22px;
-    }
-
-    .content__data {
-        font-size: 12px;
-    }
-
-    .content__blog-title {
-        font-size: 15px;
-        padding-bottom: 18px;
     }
 
     /* ================================ */
@@ -2189,21 +2189,14 @@
     .pros__about {
         margin: 0 auto 40px;
     }
-
-    .pros__img {
-        height: 208px;
-        margin-bottom: 15px;
+    .pros__list {
+        grid-template-columns: none;
     }
-
     .pros__social {
         width: 40px;
         height: 40px;
         top: 3%;
         right: 4%;
-    }
-
-    .pros__list-subtitle {
-        font-size: 12px;
     }
 
     .pros__list-title {
@@ -2213,7 +2206,15 @@
 
     /* ================================ */
     .content__list {
-        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .content__item {
+    max-width: 328px;
+    }
+    .content__blog-title {
+    padding-bottom: 20px;
     }
 
     /* ================================ */
@@ -2426,14 +2427,6 @@
         font-size: 43px;
     }
 
-    .pros__list-subtitle {
-        font-size: 8px;
-    }
-
-    .pros__list-title {
-        font-size: 14px;
-    }
-
     /* ================================ */
     .blog__inner {
         padding-top: 40px;
@@ -2446,15 +2439,6 @@
     .content__img {
         margin-bottom: 13px;
     }
-
-    .content__data {
-        font-size: 6px;
-    }
-
-    .content__blog-title {
-        font-size: 11px;
-    }
-
     /* ================================ */
     .footer__top {
         font-size: 25px;

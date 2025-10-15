@@ -1,4 +1,3 @@
-
 :root {
     --font-family: "Oswald", sans-serif;
     --second-family: 'Archivo', sans-serif;
@@ -8,6 +7,11 @@
     --bg-light: #e3e3de;
     --color-accent: #f47521;
     --transition: all .4s;
+}
+
+html, body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) #1414144d;
 }
 
 .body {
@@ -73,6 +77,12 @@
     background: var(--color-light);
 
     transition: var(--transition);
+}
+
+.burger-icon:hover span,
+.burger-icon:hover span::before,
+.burger-icon:hover span::after {
+    background: var(--color-accent);
 }
 
 .burger-icon span {
@@ -142,10 +152,27 @@
     padding: 10px 15px;
 }
 
+.full-link path {
+    transition: var(--transition);
+}
+
+.full-link:hover path {
+    stroke: var(--color-light);
+}
+
 .link-text {
     font-family: var(--second-family);
     font-weight: 700;
     line-height: 1.44;
     letter-spacing: 0.1em;
     color: var(--bg-color-dark);
+
+    transition: var(--transition);
 }
+
+.full-link:hover .link-text {
+    color: var(--color-light);
+}
+
+/* ===================== */
+
